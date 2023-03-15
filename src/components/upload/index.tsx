@@ -1,7 +1,5 @@
-
 import React from 'react'
 import './upload.module.css';
-
 
 interface IUploadProps {
 	url: string;
