@@ -1,6 +1,6 @@
 {
   "name": "robin-upload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react upload compnents ",
   "main": "dist/cjs/index.js",
   "modue": "dist/esm/index.js",
