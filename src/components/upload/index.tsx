@@ -1,9 +1,13 @@
 
-
-
 import React from 'react'
 import './upload.module.css';
 
-export default function Upload() {
+
+interface IUploadProps {
+	url: string;
+	name: string
+}
+
+export default function Upload(props: IUploadProps) {
 	return <div className="upload">upload</div>
 }

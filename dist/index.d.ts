@@ -1,4 +1,8 @@
 /// <reference types="react" />
-declare function Upload(): JSX.Element;
+interface IUploadProps {
+    url: string;
+    name: string;
+}
+declare function Upload(props: IUploadProps): JSX.Element;
 
 export { Upload };

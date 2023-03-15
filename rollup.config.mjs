@@ -12,11 +12,13 @@ import postcss from "rollup-plugin-postcss";
 
 import terser from "@rollup/plugin-terser";
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import packageJson from './package.json'
 
 // import image from '@rollup/plugin-image';
 
 
-const packageJson = require("./package.json");
+// const packageJson = require("./package.json");
+console.log(packageJson.main)
 
 
 export default [
@@ -24,7 +26,7 @@ export default [
 		input: "src/index.ts",
 		output: [
 			{
-				// file: packageJson.main,
+				// file: packageJson.main, #[!] RollupError: You must specify "output.file" or "output.dir" for the build.
 				file: "dist/cjs/index.js",
 				format: "cjs",
 				sourcemap: true,

@@ -1,3 +1,8 @@
 /// <reference types="react" />
 import './upload.module.css';
-export default function Upload(): JSX.Element;
+interface IUploadProps {
+    url: string;
+    name: string;
+}
+export default function Upload(props: IUploadProps): JSX.Element;
+export {};
