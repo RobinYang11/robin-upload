@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './upload.module.css';
+import styles from './upload.module.less';
 
 interface IUploadProps {
 	url: string;

@@ -23,6 +23,7 @@ function App() {
 				show modal
 			</button>
 			<Modal
+				// dontDestroyOnClose={true}
 				onClose={() => {
 					setVisible(false)
 				}}
