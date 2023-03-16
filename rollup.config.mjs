@@ -44,7 +44,16 @@ export default [
 				babelHelpers: "bundled",
 				exclude: "node_modules/**",
 			}),
-			postcss(),
+			postcss({
+				minimize: true,
+				modules: true,
+				use: {
+					sass: null,
+					stylus: null,
+					less: { javascriptEnabled: true }
+				},
+				extract: true
+			}),
 			terser(),
 			// image()
 		],
