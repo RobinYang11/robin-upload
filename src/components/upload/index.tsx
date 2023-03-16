@@ -1,11 +1,18 @@
 import React from 'react'
-import './upload.module.css';
+import styles from './upload.module.css';
 
 interface IUploadProps {
 	url: string;
-	name: string
+	name: string,
+	onClick(): void
 }
 
 export default function Upload(props: IUploadProps) {
-	return <div className="upload">upload</div>
+	const { onClick, url, name } = props
+	return <div
+		title={name}
+		onClick={onClick}
+		className={styles.upload}>
+		{name}
+	</div>
 }
